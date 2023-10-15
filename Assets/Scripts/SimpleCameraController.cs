@@ -165,6 +165,15 @@ namespace UnityTemplateProjects
             return direction;
         }
 
+        private void LateUpdate()
+        {
+            //выводит много
+            if (Input.GetTouch(0).tapCount == 2)
+            {
+                Debug.Log(" Double tap ");
+            }
+        }
+
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -173,6 +182,8 @@ namespace UnityTemplateProjects
                 QualitySettings.SetQualityLevel(1);
             if (Input.GetKeyDown(KeyCode.Alpha3))
                 QualitySettings.SetQualityLevel(2);
+
+            
 
             // Exit Sample
 
