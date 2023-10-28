@@ -88,6 +88,8 @@ namespace UnityTemplateProjects
 
         void Start()
         {
+
+        
             var map = new InputActionMap("Simple Camera Controller");
 
             lookAction = map.AddAction("look", binding: "<Mouse>/delta");
@@ -124,6 +126,11 @@ namespace UnityTemplateProjects
 
         void OnEnable()
         {
+
+
+Application.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
+        Application.targetFrameRate = -1;
+
             m_TargetCameraState.SetFromTransform(transform);
             m_InterpolatingCameraState.SetFromTransform(transform);
         }
@@ -167,7 +174,7 @@ namespace UnityTemplateProjects
 
         private void LateUpdate()
         {
-            //выводит много
+            //ГўГ»ГўГ®Г¤ГЁГІ Г¬Г­Г®ГЈГ®
             if (Input.GetTouch(0).tapCount == 2)
             {
                 Debug.Log(" Double tap ");
