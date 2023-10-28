@@ -128,7 +128,7 @@ namespace UnityTemplateProjects
         {
 
 
-Application.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
+//Application.vSyncCount = 0; // Set vSyncCount to 0 so that using .targetFrameRate is enabled.
         Application.targetFrameRate = -1;
 
             m_TargetCameraState.SetFromTransform(transform);
