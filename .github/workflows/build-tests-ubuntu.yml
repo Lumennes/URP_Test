@@ -93,7 +93,7 @@ jobs:
       ###########################
       #          Build          #
       ###########################
-      - uses: game-ci/unity-builder@v3
+      - uses: game-ci/unity-builder@v4
         with:
           # projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
